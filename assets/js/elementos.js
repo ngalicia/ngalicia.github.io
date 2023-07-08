@@ -26,6 +26,20 @@ const elementos = [
     description: "Sitio web realizado con React",
     image: "./assets/images/patentes.png",
     repository: "https://github.com/ngalicia/nginventor"
+  },
+
+  {
+    title: "Sistema de reporte de spam API",
+    description: "API realizada con TypeScript",
+    image: "./assets/images/spam.png",
+    repository: "https://github.com/ngalicia/report-spam-api"
+  },
+
+  {
+    title: "Sistema de reporte de spam",
+    description: "Sitio web realizado con Angular",
+    image: "./assets/images/spam.png",
+    repository: "https://github.com/ngalicia/report-spam"
   }
 
 ]
