@@ -8,7 +8,8 @@ const {
   CardActions,
   CardContent,
   CardMedia,
-  Button
+  Button,
+  Dialog
 } = MaterialUI;
 
 const useStylesPost = makeStyles(theme => ({
@@ -21,13 +22,36 @@ const Post = () => {
 
   const classes = useStylesPost();
 
+  const [imagen, setImagen] = React.useState(false);
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = (ima) => {
+    setOpen(true);
+    setImagen(ima);
+  }
+  
+  const handleClose = () => setOpen(false);
+
   return (
     <div style={{ marginTop: 20, padding: 30 }}>
+      
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        maxWidth={'md'}
+      >
+        <img
+          src={imagen}
+          alt="Image"
+        />
+      </Dialog>
+      
       <Grid container spacing={4} justify="center">
         {elementos.map((elemento, index) => (
           <Grid item key={index}>
             <Card className={classes.card}>
-              <CardActionArea>
+              <CardActionArea onClick={() => handleOpen(elemento.image)}>
                 <CardMedia
                   component="img"
                   alt="Image"
