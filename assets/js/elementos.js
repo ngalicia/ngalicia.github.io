@@ -9,7 +9,7 @@ const elementos = [
 
   {
     title: "Sistema de quinielas",
-    description: "Sitio web realizado con Laravel",
+    description: "Sitio web realizado con PHP y Laravel",
     image: "./assets/images/quinielas.png",
     repository: "https://github.com/ngalicia/ngbet"
   },
@@ -26,6 +26,13 @@ const elementos = [
     description: "Sitio web realizado con React",
     image: "./assets/images/patentes.png",
     repository: "https://github.com/ngalicia/nginventor"
+  },
+
+  {
+    title: "Sistema de cálculo de impuestos",
+    description: "Sitio web realizado con Python y Django",
+    image: "./assets/images/impuestos.png",
+    repository: "https://github.com/ngalicia/ngtax"
   },
 
   {
