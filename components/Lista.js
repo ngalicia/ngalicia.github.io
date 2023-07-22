@@ -10,7 +10,7 @@ const Lista = () => {
     <div>
       <List component='nav'>
         {certificados.map((certificado, index) => (
-          <ListItem key={index} button component="a" href={certificado.link}>
+          <ListItem key={index} button component="a" href={certificado.link} target="_blank">
             <ListItemText primary={certificado.title} />
           </ListItem>
         ))}

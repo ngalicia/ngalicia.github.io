@@ -16,6 +16,13 @@ const useStylesPost = makeStyles(theme => ({
   card: {
     width: '18rem',
   },
+  button: {
+    backgroundColor: '#f2f2f2',
+    '&:hover': {
+      color: '#1e1e1e',
+      backgroundColor: '#cccccc',
+    }
+  },
 }));
 
 const Post = () => {
@@ -68,11 +75,11 @@ const Post = () => {
               </CardActionArea>
               <CardActions>
                 {elemento.repository &&
-                  <Button size="small" color="primary" href={elemento.repository}>
+                  <Button className={classes.button} size="small" color="primary" href={elemento.repository} target="_blank">
                     Repositorio
                 </Button>}
                 {elemento.demo &&
-                  <Button size="small" color="secondary" href={elemento.demo}>
+                  <Button className={classes.button} size="small" color="secondary" href={elemento.demo} target="_blank">
                     Demo
                 </Button>}
               </CardActions>
