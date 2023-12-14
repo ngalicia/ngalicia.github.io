@@ -47,6 +47,13 @@ const elementos = [
     description: "Sitio web realizado con Angular",
     image: "./assets/images/spam.png",
     repository: "https://github.com/ngalicia/report-spam"
+  },
+
+  {
+    title: "Control remoto para TV",
+    description: "App realizada con Flutter",
+    image: "./assets/images/remote.png",
+    repository: "https://github.com/ngalicia/remotecontrol"
   }
 
 ]
